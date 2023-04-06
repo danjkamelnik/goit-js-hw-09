@@ -25,8 +25,8 @@ const options = {
     startBtn.addEventListener('click', () => {
       const countdown = setInterval(() => {
         startBtn.disabled = true;
-        const now = new Date();
-        const difference = selectedDate - now;
+        const nowTime = new Date();
+        const difference = selectedDate - nowTime;
 
         if (difference <= 0) {
           clearInterval(countdown);
